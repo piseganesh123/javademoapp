@@ -4,6 +4,6 @@ steps:
 artifacts:
   objects:
     location: 'gs://mybucket/'
-    paths: ['*.war']
+    paths: ['test.war']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['pull', 'tomcat']
