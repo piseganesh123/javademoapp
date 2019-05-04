@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['bash ls']
+  args: ['exec', 'ls']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['pull','tomcat']
 - name: 'gcr.io/cloud-builders/docker'
