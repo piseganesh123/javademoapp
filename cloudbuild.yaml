@@ -4,4 +4,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://ganeshbucketdel7may/javademoapp'
-    paths: ['/workspace/*.war']
+    paths: ['/workspace/target/DemoPipelineJava-0.0.1-SNAPSHOT.war']
