@@ -5,3 +5,5 @@ artifacts:
   objects:
     location: 'gs://ganeshbucketdel7may/javademoapp'
     paths: ['/workspace/target/DemoPipelineJava-0.0.1-SNAPSHOT.war']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/lexical-list-227517/javademoappwithcloudbuild', '.']
