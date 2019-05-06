@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/lexical-list-227517/javademoappwithcloudbuild', '.']
 - name: 'gcr.io/cloud-builders/mvn'
-  args: ['clean', 'install']
+  args: ['install']
 artifacts:
   objects:
     location: 'gs://ganeshbucketdel7may/javademoapp'
