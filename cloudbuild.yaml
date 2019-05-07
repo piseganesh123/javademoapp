@@ -7,3 +7,4 @@ artifacts:
   objects:
     location: 'gs://ganeshbucketdel7may/javademoapp'
     paths: ['/workspace/target/DemoPipelineJava-0.0.1-SNAPSHOT.war']
+images: ['gcr.io/lexical-list-227517/javademoapp-tomcat']
