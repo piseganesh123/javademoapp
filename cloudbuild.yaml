@@ -1,4 +1,10 @@
 steps:
+- name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
+  args:
+    - '-Dsonar.host.url=http://35.244.31.133:9000'
+    - '-Dsonar.login=1fd255179c3237df2b59a97027f8bfe9709bd559'
+    - '-Dsonar.projectKey=javademoproject'
+    - '-Dsonar.sources=./src/main/'
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
