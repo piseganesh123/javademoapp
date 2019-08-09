@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
+- name: 'gcr.io/sodium-sublime-243008/sonar-scanner:latest'
   args:
     - '-Dsonar.host.url=http://35.244.31.133:9000'
     - '-Dsonar.login=1fd255179c3237df2b59a97027f8bfe9709bd559'
