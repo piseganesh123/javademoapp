@@ -8,9 +8,9 @@ steps:
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/sodium-sublime-243008/javademoappwithcloudbuild', '.']
+  args: ['build', '-t', 'gcr.io/sodium-sublime-243008/javademoappwithcloudbuild:$SHORT_SHA', '.']
 artifacts:
   objects:
     location: 'gs://del7aug-ganeshbucket/javademoapp'
     paths: ['/workspace/target/DemoPipelineJava-0.0.1-SNAPSHOT.war']
-images: ['gcr.io/sodium-sublime-243008/javademoappwithcloudbuild']
+images: ['gcr.io/sodium-sublime-243008/javademoappwithcloudbuild:$SHORT_SHA']
