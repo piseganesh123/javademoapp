@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/sodium-sublime-243008/sonar-scanner:latest'
   args:
-    - '-Dsonar.host.url=http://34.93.203.202:9000'
+    - '-Dsonar.host.url=http://34.93.76.25:9000'
     - '-Dsonar.login=1fd255179c3237df2b59a97027f8bfe9709bd559'
     - '-Dsonar.projectKey=javademoproject'
     - '-Dsonar.sources=./src/user/'
