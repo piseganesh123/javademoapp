@@ -1,10 +1,4 @@
 steps:
-- name: 'gcr.io/sodium-sublime-243008/sonar-scanner:latest'
-  args:
-    - '-Dsonar.host.url=http://35.202.185.113:9000'
-    - '-Dsonar.login=9da544d76181d9e0f674cf37260c975c5253184c'
-    - '-Dsonar.projectKey=Demo-application'
-    - '-Dsonar.sources=./src/user/'
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
