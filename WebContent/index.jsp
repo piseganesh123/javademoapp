@@ -62,7 +62,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Digital Offerings</strong>
+              <strong>S.M.A.R.T. Your Favorite Source of Digital Offerings</strong>
             </h1>
             <hr>
           </div>
